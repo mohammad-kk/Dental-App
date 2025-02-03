@@ -19,7 +19,7 @@ export default function Home() {
           <Hero />
           <FeatureHowitWorks />
           <FeatureImages />
-          <ReviewCarousel /> {/* Add the ReviewCarousel component here */}
+          {/* <ReviewCarousel />  */}
           <FeatureServices />
           <FeatureCTAForm />
           <Footer />
