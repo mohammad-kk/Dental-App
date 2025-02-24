@@ -7,19 +7,30 @@ import Balancer from "react-wrap-balancer";
 import { ArrowRight } from "lucide-react";
 import { Section, Container } from "@/components/craft";
 import { Button } from "../ui/button";
+import { Tiles } from "../ui/tiles"; // Add this import
 import Placeholder from "@/public/placeholder.webp";
 
 const Hero = () => {
   return (
     <Section>
       <Container>
+        {/* Add the Tiles component as a background */}
+        <div className="absolute inset-0 overflow-hidden">
+          <Tiles 
+            className="opacity-10" 
+            rows={50} 
+            cols={8}
+            tileSize="lg"
+          />
+        </div>
+        
         <motion.div
-          initial={{ opacity: 0, y: 50 }} // Start with opacity 0 and move it 50px down
-          animate={{ opacity: 1, y: 0 }} // Fade to opacity 1 and move to original position
-          transition={{ duration: 0.3, ease: "easeOut" }} // Customize the duration and easing
-          className="flex flex-col items-center justify-center text-center min-h-screen"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+          className="flex flex-col items-center justify-center text-center min-h-screen relative z-10"
         >
-            <h1 className="text-4xl font-bold">
+            <h1 className="text-2xl md:text-4xl lg:text-7xl font-bold inter-var text-center">
             <Balancer>
             ByteDental
             </Balancer>

@@ -34,7 +34,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NavBar />
-          {children}
+          <main className="pt-16"> {/* Add padding-top to account for fixed navbar */}
+            {children}
+          </main>
           <Analytics />
         </ThemeProvider>
       </body>
