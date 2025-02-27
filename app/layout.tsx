@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "@/components/navbar";
+import Footer from "@/components/layout/footer";
 import { ThemeProvider } from "./_provider";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -37,6 +38,7 @@ export default function RootLayout({
           <main className="pt-16"> {/* Add padding-top to account for fixed navbar */}
             {children}
           </main>
+          <Footer />
           <Analytics />
         </ThemeProvider>
       </body>

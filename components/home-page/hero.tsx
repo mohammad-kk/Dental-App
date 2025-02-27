@@ -6,8 +6,7 @@ import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 import { ArrowRight } from "lucide-react";
 import { Section, Container } from "@/components/craft";
-import { Button } from "../ui/button";
-import { Tiles } from "../ui/tiles"; // Add this import
+import { Tiles } from "../ui/tiles";
 import Placeholder from "@/public/placeholder.webp";
 
 const Hero = () => {
@@ -40,16 +39,18 @@ const Hero = () => {
             Optimized, automated marketing solutions for dental practices.
             </Balancer>
           </h2>
-          <Button
-            asChild
-            className="mb-6 w-fit"
-            size={"sm"}
-            variant={"outline"}
-          >
-            <Link className="not-prose" href="https://9d8.dev">
-              Discover Our Services <ArrowRight className="w-4" />
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <Link href="/#services" passHref>
+              <button className="px-6 py-3 rounded-md bg-primary text-white font-medium hover:bg-primary-dark transition-colors">
+                Discover our services
+              </button>
             </Link>
-          </Button>
+            <Link href="/contact" passHref>
+              <button className="px-6 py-3 rounded-md bg-white border border-primary text-primary font-medium hover:bg-gray-50 transition-colors">
+                Contact us
+              </button>
+            </Link>
+          </div>
           {/* <h3 className="text-muted-foreground text-lg max-w-lg mt-4">
             <Balancer>
               Helping dentists grow with modern, results-driven marketing. From web design to patient engagement, we build strategies that work.

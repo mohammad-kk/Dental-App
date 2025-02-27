@@ -22,7 +22,7 @@ const baseWebsite: FeatureText[] = [
     icon: <Star className="h-6 w-6" />,
     title: "Custom Website Package",
     price: "$2000 (One-Time Payment)", // One-time payment for website build
-    href: "/custom-website",
+    href: "/#pricing",
     description:
       "A clean, custom-designed website that you fully own. Includes basic SEO, 1-year hosting, and full control over your domain.",
     cta: "Get Started",
@@ -35,7 +35,7 @@ const featureText: FeatureText[] = [
     icon: <TrendingUp className="h-6 w-6" />,
     title: "Basic Marketing Plan",
     price: "$500/month", // Monthly for marketing add-on
-    href: "/basic-marketing",
+    href: "/#pricing",
     description:
       "SEO optimization, Google Ads setup, and social media scheduling. Perfect for building visibility with low effort.",
     cta: "Learn More",
@@ -44,7 +44,7 @@ const featureText: FeatureText[] = [
     icon: <TrendingUp className="h-6 w-6" />,
     title: "Growth Marketing Plan",
     price: "$1000/month", // Monthly pricing
-    href: "/growth-marketing",
+    href: "/#pricing",
     description:
       "Advanced SEO, dynamic Google Ads management, and full social media strategy to grow your patient base.",
     cta: "Learn More",
@@ -56,7 +56,7 @@ const singleFeatureText: FeatureText[] = [
     icon: <Coins className="h-6 w-6" />,
     title: "Elite Automation Plan",
     price: "$1500/month", // Monthly pricing
-    href: "/elite-automation",
+    href: "/#pricing",
     description:
       "All-inclusive AI-driven marketing automation and content creation. Run ads, emails, and social media automatically—24/7.",
     cta: "Learn More",
@@ -81,78 +81,42 @@ const FeatureSet = () => {
 
           {/* Base Website Package */}
           <div className="mt-6 grid gap-6">
-            {baseWebsite.map(
-              ({ icon, title, price, description, href, cta }, index) => (
-                <Link
-                  href={`${href}`}
-                  className="flex flex-col justify-between gap-6 rounded-lg border p-6 transition-all hover:-mt-2 hover:mb-2"
-                  key={index}
-                >
-                  <div className="grid gap-4">
-                    {icon}
-                    <h4 className="text-xl text-primary">{title}</h4>
-                    <p className="text-lg font-semibold">{price}</p> {/* Pricing */}
-                    <p className="text-base opacity-75">{description}</p>
-                  </div>
-                  {cta && (
-                    <div className="flex h-fit items-center text-sm font-semibold">
-                      <p>{cta}</p> <ArrowRight className="ml-2 h-4 w-4" />
-                    </div>
-                  )}
-                </Link>
-              )
-            )}
-          </div>
+            <Link href="/custom-website" className="flex flex-col justify-between gap-6 rounded-lg border p-6 transition-all hover:-mt-2 hover:mb-2">
+              <div className="grid gap-4">
+                <Star className="h-6 w-6" />
+                <h4 className="text-xl text-primary">Custom Website Package</h4>
+                <p className="text-lg font-semibold">$2000 (One-Time Payment)</p>
+                <p className="text-base opacity-75">A clean, custom-designed website that you fully own.</p>
+              </div>
+              <div className="flex h-fit items-center text-sm font-semibold">
+                <p>Get Started</p> <ArrowRight className="ml-2 h-4 w-4" />
+              </div>
+            </Link>
 
-          {/* Add-On Marketing Plans */}
-          <h3 className="text-3xl mt-12">Add-On Marketing Plans</h3>
-          <div className="mt-6 grid gap-6 md:grid-cols-2">
-            {featureText.map(
-              ({ icon, title, price, description, href, cta }, index) => (
-                <Link
-                  href={`${href}`}
-                  className="flex flex-col justify-between gap-6 rounded-lg border p-6 transition-all hover:-mt-2 hover:mb-2"
-                  key={index}
-                >
-                  <div className="grid gap-4">
-                    {icon}
-                    <h4 className="text-xl text-primary">{title}</h4>
-                    <p className="text-lg font-semibold">{price}</p> {/* Pricing */}
-                    <p className="text-base opacity-75">{description}</p>
-                  </div>
-                  {cta && (
-                    <div className="flex h-fit items-center text-sm font-semibold">
-                      <p>{cta}</p> <ArrowRight className="ml-2 h-4 w-4" />
-                    </div>
-                  )}
-                </Link>
-              )
-            )}
-          </div>
+            {/* Repeat for other plans */}
+            <Link href="/growth-marketing" className="flex flex-col justify-between gap-6 rounded-lg border p-6 transition-all hover:-mt-2 hover:mb-2">
+              <div className="grid gap-4">
+                <TrendingUp className="h-6 w-6" />
+                <h4 className="text-xl text-primary">Growth Marketing Plan</h4>
+                <p className="text-lg font-semibold">$1000/month</p>
+                <p className="text-base opacity-75">Advanced SEO, dynamic Google Ads management.</p>
+              </div>
+              <div className="flex h-fit items-center text-sm font-semibold">
+                <p>Learn More</p> <ArrowRight className="ml-2 h-4 w-4" />
+              </div>
+            </Link>
 
-          {/* Elite Automation Plan */}
-          <div className="mt-6">
-            {singleFeatureText.map(
-              ({ icon, title, price, description, href, cta }, index) => (
-                <Link
-                  href={`${href}`}
-                  className="flex flex-col justify-between gap-6 rounded-lg border bg-muted/25 p-6 transition-all hover:-mt-2 hover:mb-2"
-                  key={index}
-                >
-                  <div className="grid gap-4">
-                    {icon}
-                    <h4 className="text-xl text-primary">{title}</h4>
-                    <p className="text-lg font-semibold">{price}</p> {/* Pricing */}
-                    <p className="text-base opacity-75">{description}</p>
-                  </div>
-                  {cta && (
-                    <div className="flex h-fit items-center text-sm font-semibold">
-                      <p>{cta}</p> <ArrowRight className="ml-2 h-4 w-4" />
-                    </div>
-                  )}
-                </Link>
-              )
-            )}
+            <Link href="/elite-automation" className="flex flex-col justify-between gap-6 rounded-lg border bg-muted/25 p-6 transition-all hover:-mt-2 hover:mb-2">
+              <div className="grid gap-4">
+                <Coins className="h-6 w-6" />
+                <h4 className="text-xl text-primary">Elite Automation Plan</h4>
+                <p className="text-lg font-semibold">$1500/month</p>
+                <p className="text-base opacity-75">All-inclusive AI-driven marketing automation.</p>
+              </div>
+              <div className="flex h-fit items-center text-sm font-semibold">
+                <p>Learn More</p> <ArrowRight className="ml-2 h-4 w-4" />
+              </div>
+            </Link>
           </div>
         </div>
       </Container>

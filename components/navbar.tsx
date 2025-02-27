@@ -50,6 +50,11 @@ export function NavBar() {
                                     </Link>
                                 </DialogClose>
                                 <DialogClose asChild>
+                                    <Link href="/contact">
+                                        <Button variant="outline" className="w-full">Contact</Button>
+                                    </Link>
+                                </DialogClose>
+                                <DialogClose asChild>
                                     <Link href="/projects">
                                         <Button variant="outline" className="w-full">Projects</Button>
                                     </Link>
@@ -72,10 +77,13 @@ export function NavBar() {
                         <Link href="/#pricing">
                             <Button variant="ghost" className="text-base font-medium">Pricing</Button>
                         </Link>
-                        {/* <Link href="/blog">
+                        <Link href="/blog">
                             <Button variant="ghost" className="text-base font-medium">Blog</Button>
                         </Link>
-                        <Link href="/projects">
+                        <Link href="/contact">
+                            <Button variant="ghost" className="text-base font-medium">Contact</Button>
+                        </Link>
+                        {/* <Link href="/projects">
                             <Button variant="ghost" className="text-base font-medium">Projects</Button>
                         </Link> */}
                     </div>

@@ -10,6 +10,7 @@ import FeatureServices from "@/components/home-page/feature-set";
 import Footer from "@/components/home-page/footer";
 import Hero from "@/components/home-page/hero";
 import ReviewCarousel from '@/components/home-page/ReviewCarousel';
+import Testimonials from "@/components/home-page/testimonials";
 
 export default function Home() {
   return (
@@ -22,7 +23,8 @@ export default function Home() {
           {/* <ReviewCarousel />  */}
           <FeatureServices />
           <FeatureCTAForm />
-          <Footer />
+          {/* <Testimonials /> */}
+          {/* <Footer /> */}
         </Container>
       </Section>
     </Main>

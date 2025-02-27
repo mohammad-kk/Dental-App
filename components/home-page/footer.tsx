@@ -40,15 +40,15 @@ export default function Footer() {
             <h5 className="font-semibold text-lg">Solutions</h5>
             <Link href="/services" className="text-gray-600 hover:text-primary">Custom Websites</Link>
             <Link href="/services#marketing" className="text-gray-600 hover:text-primary">AI Marketing</Link>
-            <Link href="/services#automation" className="text-gray-600 hover:text-primary">Practice Growth</Link>
-            <Link href="/case-studies" className="text-gray-600 hover:text-primary">Success Stories</Link>
+            {/* <Link href="/services#automation" className="text-gray-600 hover:text-primary">Practice Growth</Link> */}
+            {/* <Link href="/case-studies" className="text-gray-600 hover:text-primary">Success Stories</Link> */}
           </div>
 
           {/* Company */}
           <div className="flex flex-col gap-4">
             <h5 className="font-semibold text-lg">Company</h5>
-            <Link href="/about" className="text-gray-600 hover:text-primary">About Us</Link>
-            <Link href="/blog" className="text-gray-600 hover:text-primary">Blog</Link>
+            {/* <Link href="/about" className="text-gray-600 hover:text-primary">About Us</Link> */}
+            {/* <Link href="/#services" className="text-gray-600 hover:text-primary">Blog</Link> */}
             <div className="mt-auto pt-6">
               <p className="text-sm text-gray-500">
                 © {new Date().getFullYear()} ByteDental
