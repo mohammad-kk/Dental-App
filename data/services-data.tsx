@@ -118,7 +118,7 @@ export const servicesData: Record<string, ServiceData> = {
         }
       ]
     },
-    imageSrc: "/images/custom-website-preview.jpg"
+    imageSrc: "/images/marketing(5).jpg"
   },
   
   "basic-marketing": {
@@ -174,7 +174,7 @@ export const servicesData: Record<string, ServiceData> = {
       quote: "The Basic Marketing Plan was perfect for our new practice. We started getting calls within weeks, and it's been growing steadily ever since.",
       author: "Dr. James Wilson"
     },
-    imageSrc: "/images/basic-marketing-preview.jpg"
+    imageSrc: "/images/marketing(1).jpg"
   },
   
   "growth-marketing": {
@@ -237,7 +237,7 @@ export const servicesData: Record<string, ServiceData> = {
       title: "Satisfaction Guarantee",
       content: "If you don't see measurable results within 90 days, we'll work for free until you do."
     },
-    imageSrc: "/images/growth-marketing-preview.jpg"
+    imageSrc: "/images/marketing(2).jpg"
   },
   
   "elite-automation": {
@@ -291,6 +291,6 @@ export const servicesData: Record<string, ServiceData> = {
       title: "Limited Availability",
       content: "We only accept 5 new Elite Automation clients per month to ensure premium service quality."
     },
-    imageSrc: "/images/elite-automation-preview.jpg"
+    imageSrc: "/images/marketing(3).jpg"
   }
 };

@@ -46,7 +46,7 @@ export const blogPosts: BlogPost[] = [
     date: "February 15, 2025",
     readTime: "5 min read",
     category: "Website Design",
-    imageSrc: "/images/service-placeholder.jpg",
+    imageSrc: "/images/marketing(4).jpg",
     tags: ["website design", "patient acquisition", "dental marketing"]
   },
   {
@@ -105,7 +105,7 @@ export const blogPosts: BlogPost[] = [
     date: "February 10, 2025",
     readTime: "6 min read",
     category: "SEO",
-    imageSrc: "/images/service-placeholder.jpg",
+    imageSrc: "/images/marketing(5).jpg",
     tags: ["local SEO", "Google Business Profile", "dental marketing"]
   },
   {
@@ -187,7 +187,7 @@ export const blogPosts: BlogPost[] = [
     date: "January 28, 2025",
     readTime: "8 min read",
     category: "Social Media",
-    imageSrc: "/images/service-placeholder.jpg",
+    imageSrc: "/images/marketing(2).jpg",
     tags: ["social media", "content marketing", "dental marketing"]
   }
 ];

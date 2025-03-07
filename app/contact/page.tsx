@@ -238,7 +238,7 @@ export default function ContactPage() {
                     </button>
                     
                     <p className="text-xs text-gray-500 text-center">
-                      By submitting this form, you agree to our <a href="#" className="text-primary hover:underline">Privacy Policy</a>.
+                      {/* By submitting this form, you agree to our <a href="#" className="text-primary hover:underline">Privacy Policy</a>. */}
                     </p>
                   </form>
                 </>

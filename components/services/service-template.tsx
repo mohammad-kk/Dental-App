@@ -66,10 +66,10 @@ export default function ServiceTemplate({ serviceData }: ServiceTemplateProps) {
                 
                 <Link 
                   href="/contact" 
-                  className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-white font-medium hover:bg-primary/90 transition-colors"
+                  className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-white font-medium hover:bg-primary/90 transition-colors mt-4"
                 >
-                  Get Started
-                  <ChevronRight className="ml-2 h-4 w-4" />
+                  <span className="text-white">Get Started</span>
+                  <ChevronRight className="text-white ml-2 h-4 w-4" />
                 </Link>
               </div>
               
@@ -152,16 +152,22 @@ export default function ServiceTemplate({ serviceData }: ServiceTemplateProps) {
               )}
               
               {/* CTA */}
-              <div className="mt-8 bg-primary/5 rounded-xl p-6 border border-primary/10">
-                <h3 className="text-xl font-semibold mb-3">Ready to get started?</h3>
-                <p className="mb-4">Contact us today to learn more about our {title} and how we can help your dental practice grow.</p>
-                <Link 
-                  href="/contact" 
-                  className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-white font-medium hover:bg-primary/90 transition-colors"
-                >
-                  Contact Us
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </Link>
+              <div className="mt-8 bg-white rounded-xl p-6 border shadow-sm">
+                <div className="flex flex-col h-full">
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-3">Ready to get started?</h3>
+                    <p className="text-muted-foreground mb-4">Contact us today to learn more about our {title} and how we can help your dental practice grow.</p>
+                  </div>
+                  <div className="flex justify-end mt-auto">
+                    <Link 
+                      href="/contact" 
+                      className="inline-flex items-center justify-center rounded-lg bg-black px-6 py-3 text-white font-medium hover:bg-black/90 transition-colors"
+                    >
+                      <span className="text-white">Contact Us</span>
+                      <ExternalLink className="ml-2 h-4 w-4 text-white" />
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
             

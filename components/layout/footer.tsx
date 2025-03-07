@@ -56,9 +56,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
+                {/* <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
                   Privacy Policy
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </div>
