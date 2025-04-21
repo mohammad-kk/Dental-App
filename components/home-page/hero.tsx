@@ -40,7 +40,7 @@ const Hero = () => {
             </Balancer>
           </h2>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <Link href="/#services" passHref>
+            <Link href="/services" passHref>
               <button className="px-6 py-3 rounded-md bg-primary text-white font-medium hover:bg-primary-dark transition-colors">
                 Discover our services
               </button>
