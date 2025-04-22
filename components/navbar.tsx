@@ -71,12 +71,12 @@ export function NavBar() {
                         </NavigationMenuList>
                     </NavigationMenu>
                     <div className="flex items-center gap-4 max-[825px]:hidden">
-                        <Link href="/#services">
+                        <Link href="/services">
                             <Button variant="ghost" className="text-base font-medium">Services</Button>
                         </Link>
-                        <Link href="/#pricing">
+                        {/* <Link href="/#pricing">
                             <Button variant="ghost" className="text-base font-medium">Pricing</Button>
-                        </Link>
+                        </Link> */}
                         <Link href="/blog">
                             <Button variant="ghost" className="text-base font-medium">Blog</Button>
                         </Link>

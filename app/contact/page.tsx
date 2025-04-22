@@ -44,9 +44,11 @@ export default function ContactPage() {
   };
   
   return (
-    <Main>
+    // Add pt-24 to the Main component to account for the navbar height
+    <Main className="pt-24"> 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-primary to-purple-600 text-white">
+      {/* Remove mt-16/mt-32 from here if you added it previously */}
+      <div className="bg-gradient-to-r from-primary to-purple-600 text-white relative"> 
         <Container className="py-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl text-white md:text-4xl font-bold mb-3">Contact Us</h1>
@@ -116,7 +118,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-gray-800">Do you work with practices outside the US?</p>
-                    <p className="text-xs text-gray-600">Yes, we work with dental practices worldwide.</p>
+                    <p className="text-xs text-gray-600">No, at this time we only service dental practices in United.</p>
                   </div>
                 </div>
               </div>

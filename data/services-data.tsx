@@ -106,7 +106,7 @@ export const servicesData: Record<string, ServiceData> = {
       items: [
         {
           label: "Increase in online appointments",
-          value: "30-50%"
+          value: "30%"
         },
         {
           label: "Improved Google ranking",
