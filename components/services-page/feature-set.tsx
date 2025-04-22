@@ -20,7 +20,7 @@ type FeatureText = {
 const baseWebsite: FeatureText[] = [
   {
     icon: <Star className="h-6 w-6" />,
-    title: "Custom Website Package",
+    title: "Custom Website",
     price: "$2000 (One-Time Payment)", // One-time payment for website build
     href: "/#pricing",
     description:

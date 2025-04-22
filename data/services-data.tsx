@@ -68,7 +68,7 @@ export interface ServiceData {
 export const servicesData: Record<string, ServiceData> = {
   "custom-website": {
     id: "custom-website",
-    title: "Custom Website Package",
+    title: "Custom Website Plan",
     price: "$2000 (One-Time Payment)",
     description: "A clean, custom-designed website that you fully own. Includes basic SEO, 1-year hosting, and full control over your domain.",
     features: [

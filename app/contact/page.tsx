@@ -4,6 +4,8 @@ import { Container, Main, Section } from "@/components/craft";
 import { useState } from "react";
 import Image from "next/image";
 import { Phone, Mail, CheckCircle, Send } from "lucide-react";
+import Link from "next/link";
+import { Calendar } from 'lucide-react';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -45,106 +47,81 @@ export default function ContactPage() {
   
   return (
     // Add pt-24 to the Main component to account for the navbar height
-    <Main className="pt-24"> 
+    <Main> 
       {/* Hero Section */}
-      {/* Remove mt-16/mt-32 from here if you added it previously */}
       <div className="bg-gradient-to-r from-primary to-purple-600 text-white relative"> 
-        <Container className="py-10">
+        <Container className="py-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl text-white md:text-4xl font-bold mb-3">Contact Us</h1>
-            <p className="text-lg text-white/90">
+            <h1 className="text-3xl text-white md:text-5xl font-bold mb-1">Contact Us</h1>
+            <p className="text-lg md:text-xl text-white/90">
               Let's discuss how we can help grow your dental practice
             </p>
           </div>
         </Container>
       </div>
 
-      <Section className="py-10">
+      <Section className="py-6">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
             {/* Left Column - Contact Info */}
-            <div className="lg:col-span-1">
-              <div className="bg-gradient-to-br from-primary to-purple-700 rounded-lg shadow p-5 text-white mb-6">
-                <h2 className="text-xl text-white font-bold mb-4">Get In Touch</h2>
+            <div className="lg:col-span-1 flex flex-col h-full">
+              <div className="bg-gradient-to-br from-primary to-purple-700 rounded-lg shadow p-4 text-white mb-4">
+                <h2 className="text-2xl text-white font-bold mb-2">Get In Touch</h2>
                 
-                <div className="space-y-4">
-                  <div className="flex items-start">
-                    <Phone className="h-5 w-5 text-white/80 mt-1 flex-shrink-0" />
+                <div className="space-y-2">
+                  <div className="flex items-center">
+                    <Phone className="h-5 w-5 text-white/80 flex-shrink-0" />
                     <div className="ml-3">
-                      <p className="font-medium">707-400-3575</p>
-                      <p className="text-sm text-white/70">Mon-Fri, 9am-5pm PST</p>
+                      <p className="font-medium text-lg">707-400-3575</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
-                    <Mail className="h-5 w-5 text-white/80 mt-1 flex-shrink-0" />
+                  <div className="flex items-center">
+                    <Mail className="h-5 w-5 text-white/80 flex-shrink-0" />
                     <div className="ml-3">
-                      <p className="font-medium">kabirkhan@berkeley.edu</p>
-                      <p className="text-sm text-white/70">We respond within 24hrs</p>
+                      <p className="font-medium text-lg">kabirkhan@berkeley.edu</p>
                     </div>
                   </div>
-                </div>
-                
-                <div className="mt-6 pt-6 border-t border-white/20">
-                  <h3 className=" text-white font-medium mb-2">Our Services</h3>
-                  <ul className="space-y-1 text-sm">
-                    <li className="flex items-center">
-                      <CheckCircle className="h-3.5 w-3.5 mr-2 text-white/80" />
-                      <span>Website Development</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-3.5 w-3.5 mr-2 text-white/80" />
-                      <span>Growth Marketing</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-3.5 w-3.5 mr-2 text-white/80" />
-                      <span>Elite Automation</span>
-                    </li>
-                    <li className="flex items-center">
-                      {/* <CheckCircle className="h-3.5 w-3.5 mr-2 text-white/80" /> */}
-                      {/* <span>Social Media Management</span> */}
-                    </li>
-                  </ul>
                 </div>
               </div>
               
               {/* FAQ Mini Section */}
-              <div className="bg-gray-50 rounded-lg p-5 border border-gray-100">
-                <h3 className="font-bold text-gray-900 mb-3">Quick FAQs</h3>
-                <div className="space-y-3">
+              <div className="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                <h3 className="font-bold text-gray-900 text-lg mb-2">Quick FAQs</h3>
+                <div className="space-y-2">
                   <div>
-                    <p className="text-sm font-medium text-gray-800">How soon can you start?</p>
-                    <p className="text-xs text-gray-600">We typically begin within 1-2 weeks of agreement.</p>
+                    <p className="text-base font-medium text-gray-800">How soon can you start?</p>
+                    <p className="text-sm text-gray-600">We typically begin within 1-2 weeks of agreement.</p>
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-gray-800">Do you work with practices outside the US?</p>
-                    <p className="text-xs text-gray-600">No, at this time we only service dental practices in United.</p>
+                    <p className="text-base font-medium text-gray-800">Do you work with practices outside the US?</p>
+                    <p className="text-sm text-gray-600">No, at this time we only service dental practices in United.</p>
                   </div>
                 </div>
               </div>
             </div>
             
             {/* Right Column - Contact Form */}
-            <div className="lg:col-span-2 bg-white rounded-lg shadow p-6">
+            <div className="lg:col-span-2 bg-white rounded-lg shadow p-4">
               {isSubmitted ? (
-                <div className="text-center py-10">
-                  <div className="bg-green-100 text-green-700 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <CheckCircle className="h-8 w-8" />
+                <div className="text-center py-6">
+                  <div className="bg-green-100 text-green-700 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-2">
+                    <CheckCircle className="h-7 w-7" />
                   </div>
                   <h2 className="text-2xl font-bold mb-2">Thank You!</h2>
-                  <p className="text-gray-600 max-w-md mx-auto">
+                  <p className="text-gray-600 text-lg max-w-md mx-auto">
                     Your message has been sent successfully. We'll get back to you shortly to discuss how we can help your dental practice grow.
                   </p>
                 </div>
               ) : (
                 <>
-                  <div className="flex justify-between items-center mb-6">
-                    <h2 className="text-xl font-bold">Send Us a Message</h2>
+                  <div className="flex justify-between items-center mb-3">
+                    <h2 className="text-2xl font-bold">Send Us a Message</h2>
                     <span className="text-xs text-gray-500">* Required fields</span>
                   </div>
                   
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <form onSubmit={handleSubmit} className="space-y-3">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       <div>
                         <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
                           First Name *
@@ -156,7 +133,7 @@ export default function ContactPage() {
                           value={formData.firstName}
                           onChange={handleChange}
                           required
-                          className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded focus:ring-1 focus:ring-primary focus:border-primary text-sm"
+                          className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded focus:ring-1 focus:ring-primary focus:border-primary text-base"
                           placeholder="John"
                         />
                       </div>
@@ -171,7 +148,7 @@ export default function ContactPage() {
                           value={formData.lastName}
                           onChange={handleChange}
                           required
-                          className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded focus:ring-1 focus:ring-primary focus:border-primary text-sm"
+                          className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded focus:ring-1 focus:ring-primary focus:border-primary text-base"
                           placeholder="Smith"
                         />
                       </div>
@@ -188,7 +165,7 @@ export default function ContactPage() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded focus:ring-1 focus:ring-primary focus:border-primary text-sm"
+                        className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded focus:ring-1 focus:ring-primary focus:border-primary text-base"
                         placeholder="john@example.com"
                       />
                     </div>
@@ -203,7 +180,7 @@ export default function ContactPage() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded focus:ring-1 focus:ring-primary focus:border-primary text-sm"
+                        className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded focus:ring-1 focus:ring-primary focus:border-primary text-base"
                         placeholder="(555) 123-4567"
                       />
                     </div>
@@ -219,7 +196,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         rows={3}
-                        className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded focus:ring-1 focus:ring-primary focus:border-primary text-sm"
+                        className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded focus:ring-1 focus:ring-primary focus:border-primary text-base"
                         placeholder="Tell us about your practice and what you're looking for..."
                       ></textarea>
                     </div>
@@ -227,7 +204,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-primary text-white py-2 px-4 rounded font-medium hover:bg-primary-dark transition-colors disabled:opacity-70 flex items-center justify-center"
+                      className="w-full bg-primary text-white py-2.5 px-4 rounded font-medium hover:bg-primary-dark transition-colors disabled:opacity-70 flex items-center justify-center"
                     >
                       {isSubmitting ? (
                         <span>Sending...</span>
@@ -239,9 +216,19 @@ export default function ContactPage() {
                       )}
                     </button>
                     
-                    <p className="text-xs text-gray-500 text-center">
-                      {/* By submitting this form, you agree to our <a href="#" className="text-primary hover:underline">Privacy Policy</a>. */}
-                    </p>
+                    <div className="relative flex items-center my-1">
+                      <div className="flex-grow border-t border-gray-200"></div>
+                      <span className="flex-shrink mx-3 text-gray-400 text-sm">or</span>
+                      <div className="flex-grow border-t border-gray-200"></div>
+                    </div>
+                    
+                    <Link 
+                      href="https://cal.com/kabir-khan/30min" 
+                      className="w-full bg-white border-2 border-primary text-primary py-2.5 px-4 rounded font-medium hover:bg-primary/5 transition-colors flex items-center justify-center"
+                    >
+                      <Calendar className="w-4 h-4 mr-2" />
+                      Book a Free Discovery Call
+                    </Link>
                   </form>
                 </>
               )}

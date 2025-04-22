@@ -35,7 +35,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NavBar />
-          <main className="pt-16"> {/* Add padding-top to account for fixed navbar */}
+          {/* The pt-[78px] might need adjustment depending on the final navbar height */}
+          <main className="pt-[78px] pb-12"> {/* Ensure main content is above tiles */}
             {children}
           </main>
           <Footer />

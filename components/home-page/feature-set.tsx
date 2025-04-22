@@ -35,7 +35,7 @@ const featureText: FeatureText[] = [
     icon: <TrendingUp className="h-6 w-6" />,
     title: "Basic Marketing Plan",
     price: "$500/month", // Monthly for marketing add-on
-    href: "/basic-marketing",
+    href: "/services/basic-marketing",
     description:
       "SEO optimization, Google Ads setup, and social media scheduling. Perfect for building visibility with low effort.",
     cta: "Learn More",
@@ -44,7 +44,7 @@ const featureText: FeatureText[] = [
     icon: <TrendingUp className="h-6 w-6" />,
     title: "Growth Marketing Plan",
     price: "$1000/month", // Monthly pricing
-    href: "/growth-marketing",
+    href: "/services/growth-marketing",
     description:
       "Advanced SEO, dynamic Google Ads management, and full social media strategy to grow your patient base.",
     cta: "Learn More",
@@ -56,7 +56,7 @@ const singleFeatureText: FeatureText[] = [
     icon: <Coins className="h-6 w-6" />,
     title: "Elite Automation Plan",
     price: "$1500/month", // Monthly pricing
-    href: "/elite-automation",
+    href: "/services/elite-automation",
     description:
       "All-inclusive AI-driven marketing automation and content creation. Run ads, emails, and social media automatically—24/7.",
     cta: "Learn More",

@@ -50,33 +50,7 @@ export default function ServicesPage() {
         </p>
       </div>
 
-      {/* Image Carousel */}
-      <Section className="mb-16">
-        <Container>
-          <Carousel className="w-full">
-            <CarouselContent>
-              {photos.map((photo, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1">
-                    <div className="overflow-hidden rounded-xl aspect-video relative">
-                      <Image
-                        src={photo.src}
-                        alt={`Dental service image ${index + 1}`}
-                        fill
-                        className="object-cover transition-transform hover:scale-105 duration-500"
-                      />
-                    </div>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <div className="flex justify-center mt-4">
-              <CarouselPrevious className="static translate-y-0 mr-2" />
-              <CarouselNext className="static translate-y-0 ml-2" />
-            </div>
-          </Carousel>
-        </Container>
-      </Section>
+
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
         {Object.values(servicesData).map((service) => (
@@ -146,7 +120,33 @@ export default function ServicesPage() {
           </div>
         ))}
       </div>
-
+      {/* Image Carousel */}
+      <Section className="mb-16">
+        <Container>
+          <Carousel className="w-full">
+            <CarouselContent>
+              {photos.map((photo, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1">
+                    <div className="overflow-hidden rounded-xl aspect-video relative">
+                      <Image
+                        src={photo.src}
+                        alt={`Dental service image ${index + 1}`}
+                        fill
+                        className="object-cover transition-transform hover:scale-105 duration-500"
+                      />
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="flex justify-center mt-4">
+              <CarouselPrevious className="static translate-y-0 mr-2" />
+              <CarouselNext className="static translate-y-0 ml-2" />
+            </div>
+          </Carousel>
+        </Container>
+      </Section>
       {/* Why Choose Us Section */}
       <div className="bg-gray-50 rounded-2xl p-8 md:p-12 mb-16">
         <div className="text-center mb-10">
