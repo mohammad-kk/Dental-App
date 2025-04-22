@@ -1,6 +1,7 @@
 "use client"
 import { cn } from "@/lib/utils"
-import { BookOpen, MenuIcon } from 'lucide-react'
+// Remove BookOpen if no longer needed, keep MenuIcon
+import { MenuIcon } from 'lucide-react'
 import Link from "next/link"
 import * as React from "react"
 import { Dialog, DialogClose } from "./ui/dialog"
@@ -23,7 +24,12 @@ export function NavBar() {
                         </SheetTrigger>
                         <SheetContent side="left">
                             <SheetHeader>
-                                <SheetTitle>ByteDental.</SheetTitle>
+                                {/* Edit 1: Increase size class for mobile favicon */}
+                                <SheetTitle className="flex items-center gap-2">
+                                    {/* Changed h-6 w-6 to h-8 w-8 */}
+                                    <img src="/favicon.ico" alt="ByteDental Logo" className="h-24 w-24" />
+                                    ByteDental.
+                                </SheetTitle>
                                 <SheetDescription>
                                     Scale and launch products with expert developers, on-demand, at a flat monthly fee
                                 </SheetDescription>
@@ -66,7 +72,12 @@ export function NavBar() {
                     <NavigationMenu>
                         <NavigationMenuList className="max-[825px]:hidden">
                             <Link href="/" className="pl-2">
-                                <h1 className="font-bold text-2xl tracking-tight">ByteDental.</h1>
+                                {/* Edit 2: Increase size class for desktop favicon */}
+                                <div className="flex items-center gap-2">
+                                    {/* Changed h-6 w-6 to h-8 w-8 */}
+                                    <img src="/favicon.ico" alt="ByteDental Logo" className="h-8 w-8" />
+                                    <h1 className="font-bold text-2xl tracking-tight">ByteDental.</h1>
+                                </div>
                             </Link>
                         </NavigationMenuList>
                     </NavigationMenu>

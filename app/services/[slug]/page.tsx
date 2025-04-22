@@ -63,30 +63,6 @@ export default function ServicePage({ params }: ServicePageProps) {
           <p className="text-3xl font-bold text-primary mb-6">{service.price}</p>
           <p className="text-lg text-gray-600 mb-8">{service.description}</p>
           
-          <div className="mb-8">
-            <h3 className="text-xl font-bold mb-4">What's Included:</h3>
-            <ul className="space-y-3">
-              {service.features.map((feature, index) => (
-                <li key={index} className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                  <span dangerouslySetInnerHTML={{ __html: feature }} />
-                </li>
-              ))}
-            </ul>
-          </div>
-          
-          <div className="mb-8">
-            <h3 className="text-xl font-bold mb-4">Ideal For:</h3>
-            <ul className="space-y-3">
-              {service.idealFor.map((item, index) => (
-                <li key={index} className="flex items-start">
-                  <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          
           <Link 
             href="/contact"
             className="inline-flex items-center justify-center py-2 px-6 rounded-lg font-medium bg-primary text-white hover:bg-primary/90 transition-colors"
@@ -103,6 +79,35 @@ export default function ServicePage({ params }: ServicePageProps) {
             fill
             className="object-cover"
           />
+        </div>
+      </div>
+
+      {/* Features and Ideal For Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        {/* What's Included Card */}
+        <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+          <h3 className="text-xl font-bold mb-4">What's Included:</h3>
+          <ul className="space-y-3">
+            {service.features.map((feature, index) => (
+              <li key={index} className="flex items-start">
+                <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
+                <span dangerouslySetInnerHTML={{ __html: feature }} />
+              </li>
+            ))}
+          </ul>
+        </div>
+        
+        {/* Ideal For Card */}
+        <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+          <h3 className="text-xl font-bold mb-4">Ideal For:</h3>
+          <ul className="space-y-3">
+            {service.idealFor.map((item, index) => (
+              <li key={index} className="flex items-start">
+                <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 

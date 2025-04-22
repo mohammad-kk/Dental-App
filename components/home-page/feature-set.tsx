@@ -22,7 +22,7 @@ const baseWebsite: FeatureText[] = [
     icon: <Star className="h-6 w-6" />,
     title: "Custom Website Package",
     price: "$2000 (One-Time Payment)", // One-time payment for website build
-    href: "/custom-website",
+    href: "/services/custom-website",
     description:
       "A clean, custom-designed website that you fully own. Includes basic SEO, 1-year hosting, and full control over your domain.",
     cta: "Get Started",

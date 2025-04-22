@@ -102,7 +102,7 @@ export const servicesData: Record<string, ServiceData> = {
     },
     results: {
       title: "Expected Results",
-      layout: "list",
+      layout: "grid",
       items: [
         {
           label: "Increase in online appointments",
@@ -110,11 +110,15 @@ export const servicesData: Record<string, ServiceData> = {
         },
         {
           label: "Improved Google ranking",
-          value: "Top 10"
+          value: "25% higher"
         },
         {
           label: "Mobile traffic conversion",
-          value: "25% higher"
+          value: "25%"
+        },
+                {
+          label: "Website conversion improvement",
+          value: "38%"
         }
       ]
     },
@@ -153,8 +157,8 @@ export const servicesData: Record<string, ServiceData> = {
       ]
     },
     results: {
-      title: "Typical Results",
-      layout: "list",
+      title: "Expected Results",
+      layout: "grid",
       items: [
         {
           label: "Increase in Google visibility",
@@ -166,7 +170,11 @@ export const servicesData: Record<string, ServiceData> = {
         },
         {
           label: "Growth in online reviews",
-          value: "8-12 per month"
+          value: "8% Increase"
+        },
+        {
+          label: "Website conversion improvement",
+          value: "38%"
         }
       ]
     },
@@ -220,7 +228,7 @@ export const servicesData: Record<string, ServiceData> = {
           value: "47%"
         },
         {
-          label: "Typical ROI",
+          label: "Expected ROI",
           value: "4.2x"
         },
         {
@@ -247,9 +255,9 @@ export const servicesData: Record<string, ServiceData> = {
     isPremium: true,
     description: "All-inclusive AI-driven marketing automation and content creation. Run ads, emails, and social media automatically—24/7.",
     features: [
-      "<strong>Everything in Growth Plan</strong> plus premium automation features",
-      "<strong>AI-Powered Content Creation:</strong> Automated blog posts, social media, and email content",
-      "<strong>24/7 Ad Management:</strong> AI-optimized campaigns with real-time adjustments",
+      "<strong>Everything in Growth Plan</strong> plus premium  features",
+      "<strong>AI-Powered Content Creation:</strong> Automated blog posts, emails.",
+      "<strong>24/7 Ad Management:</strong> AI-optimized campaigns",
       "<strong>Automated Patient Journey:</strong> Personalized email sequences based on patient behavior",
       "<strong>Predictive Analytics:</strong> AI forecasting for marketing performance",
       "<strong>VIP Strategy Team:</strong> Dedicated strategist, designer, and content creator"

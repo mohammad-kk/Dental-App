@@ -92,15 +92,15 @@ export default function ServicesPage() {
               <div className="mb-6">
                 <h4 className="font-medium mb-3">Key Features:</h4>
                 <ul className="space-y-2">
-                  {service.features.slice(0, 4).map((feature, index) => (
+                  {service.features.slice(0, 3).map((feature, index) => (
                     <li key={index} className="flex items-start">
                       <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
                       <span dangerouslySetInnerHTML={{ __html: feature }} />
                     </li>
                   ))}
                 </ul>
-                {service.features.length > 4 && (
-                  <p className="text-sm text-gray-500 mt-2">+ {service.features.length - 4} more features</p>
+                {service.features.length > 3 && (
+                  <p className="text-sm text-gray-500 mt-2">+ {service.features.length - 3} more features</p>
                 )}
               </div>
 
