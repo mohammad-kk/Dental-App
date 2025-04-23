@@ -4,66 +4,66 @@
 
   @layer base {
     :root {
-      --background: 0 0% 100%;
-      --foreground: 240 10% 3.9%;
+      --background: 240 17% 98%; /* Mist Gray #F9F9FA */
+      --foreground: 215 42% 25%; /* Navy #243C5A */
 
-      --card: 0 0% 100%;
-      --card-foreground: 240 10% 3.9%;
+      --card: 240 17% 98%; /* Mist Gray #F9F9FA */
+      --card-foreground: 215 42% 25%; /* Navy #243C5A */
 
-      --popover: 0 0% 100%;
-      --popover-foreground: 240 10% 3.9%;
+      --popover: 240 17% 98%; /* Mist Gray #F9F9FA */
+      --popover-foreground: 215 42% 25%; /* Navy #243C5A */
 
-      --primary: 240 5.9% 10%;
-      --primary-foreground: 0 0% 98%;
+      --primary: 255 100% 68%; /* Royal Purple #7B61FF */
+      --primary-foreground: 240 17% 98%; /* Mist Gray #F9F9FA */
 
-      --secondary: 240 4.8% 95.9%;
-      --secondary-foreground: 240 5.9% 10%;
+      --secondary: 270 95% 75%; /* Orchid #C084FC */
+      --secondary-foreground: 240 17% 98%; /* Mist Gray #F9F9FA */
 
-      --muted: 240 4.8% 95.9%;
-      --muted-foreground: 240 3.8% 46.1%;
+      --muted: 210 77% 89%; /* Sky Blue #C1D9FA */
+      --muted-foreground: 215 42% 25%; /* Navy #243C5A */
 
-      --accent: 240 4.8% 95.9%;
-      --accent-foreground: 240 5.9% 10%;
+      --accent: 6 74% 70%; /* Coral #EB857C */
+      --accent-foreground: 240 17% 98%; /* Mist Gray #F9F9FA */
 
       --destructive: 0 84.2% 60.2%;
       --destructive-foreground: 0 0% 98%;
 
-      --border: 240 5.9% 90%;
-      --input: 240 5.9% 90%;
-      --ring: 240 10% 3.9%;
+      --border: 210 77% 89%; /* Sky Blue #C1D9FA */
+      --input: 210 77% 89%; /* Sky Blue #C1D9FA */
+      --ring: 255 100% 68%; /* Royal Purple #7B61FF */
 
       --radius: 0.5rem;
       --tile: rgba(0, 0, 0, 0.1);
     }
 
     .dark {
-      --background: 240 10% 3.9%;
-      --foreground: 0 0% 98%;
+      --background: 215 42% 25%; /* Navy #243C5A */
+      --foreground: 240 17% 98%; /* Mist Gray #F9F9FA */
 
-      --card: 240 10% 3.9%;
-      --card-foreground: 0 0% 98%;
+      --card: 215 42% 25%; /* Navy #243C5A */
+      --card-foreground: 240 17% 98%; /* Mist Gray #F9F9FA */
 
-      --popover: 240 10% 3.9%;
-      --popover-foreground: 0 0% 98%;
+      --popover: 215 42% 25%; /* Navy #243C5A */
+      --popover-foreground: 240 17% 98%; /* Mist Gray #F9F9FA */
 
-      --primary: 0 0% 98%;
-      --primary-foreground: 240 5.9% 10%;
+      --primary: 255 100% 68%; /* Royal Purple #7B61FF */
+      --primary-foreground: 240 17% 98%; /* Mist Gray #F9F9FA */
 
-      --secondary: 240 3.7% 15.9%;
-      --secondary-foreground: 0 0% 98%;
+      --secondary: 270 95% 75%; /* Orchid #C084FC */
+      --secondary-foreground: 240 17% 98%; /* Mist Gray #F9F9FA */
 
-      --muted: 240 3.7% 15.9%;
-      --muted-foreground: 240 5% 64.9%;
+      --muted: 210 77% 89%; /* Sky Blue #C1D9FA */
+      --muted-foreground: 215 42% 25%; /* Navy #243C5A */
 
-      --accent: 240 3.7% 15.9%;
-      --accent-foreground: 0 0% 98%;
+      --accent: 6 74% 70%; /* Coral #EB857C */
+      --accent-foreground: 240 17% 98%; /* Mist Gray #F9F9FA */
 
       --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 0 0% 98%;
+      --destructive-foreground: 240 17% 98%; /* Mist Gray #F9F9FA */
 
-      --border: 240 3.7% 15.9%;
-      --input: 240 3.7% 15.9%;
-      --ring: 240 4.9% 83.9%;
+      --border: 210 77% 89%; /* Sky Blue #C1D9FA */
+      --input: 210 77% 89%; /* Sky Blue #C1D9FA */
+      --ring: 6 74% 70%; /* Coral #EB857C */
     }
   }
 

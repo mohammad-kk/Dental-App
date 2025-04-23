@@ -13,23 +13,24 @@ import { Calendar } from 'lucide-react';
 
 const CTA = () => {
   return (
-    <Section className="px-4">
-      <Container className="flex flex-col items-center gap-6 rounded-lg border bg-accent/50 p-6 text-center md:rounded-xl md:p-12">
-        <h2 className="!my-0">Ready to Transform Your Dental Practice?</h2>
-        <h3 className="!mb-0 text-muted-foreground">
+    <Section className="px-4 py-8">
+      <Container className="flex bg-primary flex-col items-center gap-6 rounded-2xl border p-8 text-center max-w-5xl mx-auto shadow-lg">
+        <h2 className="text-3xl md:text-4xl font-bold text-white">Ready to Transform Your Dental Practice?</h2>
+        <p className="text-white/90 text-lg max-w-3xl mx-auto">
           <Balancer>
             Book a free discovery call to learn how our AI-powered marketing can help grow your practice. 
             No commitments, just a conversation about your goals.
           </Balancer>
-        </h3>
-        <div className="not-prose mx-auto flex items-center gap-2">
-          <Button className="w-fit" asChild>
-            <Link href="https://cal.com/kabir-khan/30min" className="inline-flex items-center gap-2">
-              <Calendar className="w-4 h-4" />
-              Book Your Free Discovery Call
-            </Link>
-          </Button>
-        </div>
+        </p>
+        <Button 
+          className="w-fit bg-white hover:bg-white/90 text-primary font-medium px-8 py-4 text-base no-underline transition-all duration-300 hover:shadow-md"
+          asChild
+        >
+          <Link href="https://cal.com/kabir-khan/30min" className="inline-flex items-center gap-3 no-underline">
+            <Calendar className="w-5 h-5" />
+            Book Your Free Discovery Call
+          </Link>
+        </Button>
       </Container>
     </Section>
   );

@@ -106,19 +106,19 @@ export const servicesData: Record<string, ServiceData> = {
       items: [
         {
           label: "Increase in online appointments",
-          value: "30%"
+          value: "30%+"
         },
         {
           label: "Improved Google ranking",
-          value: "25% higher"
+          value: "25%+"
         },
         {
           label: "Mobile traffic conversion",
-          value: "25%"
+          value: "25%+"
         },
                 {
           label: "Website conversion improvement",
-          value: "38%"
+          value: "38%+"
         }
       ]
     },
@@ -162,7 +162,7 @@ export const servicesData: Record<string, ServiceData> = {
       items: [
         {
           label: "Increase in Google visibility",
-          value: "65%"
+          value: "65%+"
         },
         {
           label: "New patient inquiries per month",
@@ -170,11 +170,11 @@ export const servicesData: Record<string, ServiceData> = {
         },
         {
           label: "Growth in online reviews",
-          value: "8% Increase"
+          value: "8+"
         },
         {
           label: "Website conversion improvement",
-          value: "38%"
+          value: "38%+"
         }
       ]
     },
@@ -221,11 +221,11 @@ export const servicesData: Record<string, ServiceData> = {
       items: [
         {
           label: "Average increase in new patients",
-          value: "32%"
+          value: "32%+"
         },
         {
           label: "Increase in high-value procedures",
-          value: "47%"
+          value: "47%+"
         },
         {
           label: "Expected ROI",
@@ -233,7 +233,7 @@ export const servicesData: Record<string, ServiceData> = {
         },
         {
           label: "Website conversion improvement",
-          value: "38%"
+          value: "38%+"
         }
       ]
     },
@@ -275,7 +275,7 @@ export const servicesData: Record<string, ServiceData> = {
       items: [
         {
           label: "Reduction in marketing management time",
-          value: "85%"
+          value: "85%+"
         },
         {
           label: "More content produced monthly",
@@ -283,7 +283,7 @@ export const servicesData: Record<string, ServiceData> = {
         },
         {
           label: "Higher conversion rates",
-          value: "42%"
+          value: "42%+"
         },
         {
           label: "Average ROI",
@@ -292,7 +292,7 @@ export const servicesData: Record<string, ServiceData> = {
       ]
     },
     testimonial: {
-      quote: "The Elite Automation Plan has transformed our practice. Our marketing runs itself while we focus on patients. We've seen a 215% increase in high-value procedures in just 6 months.",
+      quote: "The Elite Automation Plan has transformed our practice. Our marketing runs itself while we focus on patients. We've seen a 85% increase in high-value procedures in just 6 months.",
       author: "Dr. Michael Chen"
     },
     specialNote: {

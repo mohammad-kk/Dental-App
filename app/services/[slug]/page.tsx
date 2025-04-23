@@ -141,10 +141,10 @@ export default function ServicePage({ params }: ServicePageProps) {
           
           <div className={`grid ${service.results.layout === 'grid' ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4' : 'grid-cols-1'} gap-6`}>
             {service.results.items.map((item, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-                <h3 className="text-lg font-medium text-gray-600 mb-2">{item.label}</h3>
+              <div key={index} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-base font-medium text-gray-600 mb-1">{item.label}</h3>
                 {item.value && (
-                  <p className="text-3xl font-bold text-primary">{item.value}</p>
+                  <p className="text-4xl font-bold text-primary my-2">{item.value}</p>
                 )}
                 {item.description && (
                   <p className="text-gray-600 mt-2">{item.description}</p>

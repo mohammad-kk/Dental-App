@@ -68,17 +68,17 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/custom-website" className="text-gray-400 hover:text-primary transition-colors">
+                <Link href="services/custom-website" className="text-gray-400 hover:text-primary transition-colors">
                   Custom Website
                 </Link>
               </li>
               <li>
-                <Link href="/growth-marketing" className="text-gray-400 hover:text-primary transition-colors">
+                <Link href="services//growth-marketing" className="text-gray-400 hover:text-primary transition-colors">
                   Growth Marketing
                 </Link>
               </li>
               <li>
-                <Link href="/elite-automation" className="text-gray-400 hover:text-primary transition-colors">
+                <Link href="services//elite-automation" className="text-gray-400 hover:text-primary transition-colors">
                   Elite Automation
                 </Link>
               </li>
